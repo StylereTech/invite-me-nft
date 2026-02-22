@@ -69,7 +69,7 @@ export default function InvitePage() {
         {/* Event Card */}
         <div className="card overflow-hidden mb-6">
           {/* Artwork Header */}
-          <div className="h-48 bg-gradient-to-br from-white/20 to-gray-400/5 flex items-center justify-center">
+          <div className="h-48 bg-gradient-to-br from-sky-400/20 to-gray-400/5 flex items-center justify-center">
             <div className="text-center">
               <div className="text-5xl mb-2">🎉</div>
               <div className="text-white font-semibold">You're Invited!</div>
@@ -80,7 +80,7 @@ export default function InvitePage() {
           <div className="p-6">
             <h1 className="text-3xl font-bold mb-4">{invite.event.name}</h1>
             
-            <div className="space-y-3 text-gray-300 mb-6">
+            <div className="space-y-3 text-sky-300 mb-6">
               <div className="flex items-center gap-3">
                 <Calendar className="w-5 h-5 text-white" />
                 <span>{format(invite.event.date, 'EEEE, MMMM d, yyyy')}</span>
@@ -143,7 +143,7 @@ export default function InvitePage() {
             </div>
 
             {/* QR Code */}
-            <div className="bg-white p-4 rounded-lg inline-block mx-auto">
+            <div className="bg-sky-500 p-4 rounded-lg inline-block mx-auto">
               <QRCodeSVG 
                 value={invite.tokenId}
                 size={200}

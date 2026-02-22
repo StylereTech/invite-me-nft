@@ -78,7 +78,7 @@ export default function HomePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <span className="inline-block px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white text-sm font-medium mb-8">
+            <span className="inline-block px-4 py-2 rounded-full bg-sky-500/10 border border-white/20 text-white text-sm font-medium mb-8">
               🎉 The Future of Event Invitations
             </span>
             
@@ -157,7 +157,7 @@ export default function HomePage() {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
               >
-                <div className="w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-lg bg-sky-500/10 flex items-center justify-center mb-4">
                   <feature.icon className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
@@ -204,7 +204,7 @@ export default function HomePage() {
                 </div>
                 {i < steps.length - 1 && (
                   <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2">
-                    <ArrowRight className="w-8 h-8 text-white/30" />
+                    <ArrowRight className="w-8 h-8 text-sky-500/30" />
                   </div>
                 )}
               </motion.div>
@@ -253,7 +253,7 @@ export default function HomePage() {
                     <Star key={i} className="w-5 h-5 fill-white text-white" />
                   ))}
                 </div>
-                <p className="text-gray-300 mb-4">"{testimonial.text}"</p>
+                <p className="text-sky-300 mb-4">"{testimonial.text}"</p>
                 <div>
                   <div className="font-semibold">{testimonial.name}</div>
                   <div className="text-gray-500 text-sm">{testimonial.role}</div>

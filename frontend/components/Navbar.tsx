@@ -13,7 +13,7 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center">
+            <div className="w-10 h-10 rounded-lg bg-sky-500/10 flex items-center justify-center">
               <Sparkles className="w-6 h-6 text-white" />
             </div>
             <span className="text-xl font-bold">
@@ -23,13 +23,13 @@ export function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            <Link href="/events" className="text-gray-300 hover:text-white transition-colors">
+            <Link href="/events" className="text-sky-300 hover:text-white transition-colors">
               My Events
             </Link>
-            <Link href="/create-event" className="text-gray-300 hover:text-white transition-colors">
+            <Link href="/create-event" className="text-sky-300 hover:text-white transition-colors">
               Create Event
             </Link>
-            <Link href="/scanner" className="text-gray-300 hover:text-white transition-colors">
+            <Link href="/scanner" className="text-sky-300 hover:text-white transition-colors">
               Scanner
             </Link>
           </div>
@@ -58,21 +58,21 @@ export function Navbar() {
           <div className="px-6 py-4 space-y-4">
             <Link 
               href="/events" 
-              className="block text-gray-300 hover:text-white transition-colors"
+              className="block text-sky-300 hover:text-white transition-colors"
               onClick={() => setIsOpen(false)}
             >
               My Events
             </Link>
             <Link 
               href="/create-event" 
-              className="block text-gray-300 hover:text-white transition-colors"
+              className="block text-sky-300 hover:text-white transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Create Event
             </Link>
             <Link 
               href="/scanner" 
-              className="block text-gray-300 hover:text-white transition-colors"
+              className="block text-sky-300 hover:text-white transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Scanner

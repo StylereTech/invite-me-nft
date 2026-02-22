@@ -54,7 +54,7 @@ export default function EventsPage() {
 
         {events.length === 0 ? (
           <div className="card p-12 text-center">
-            <div className="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center mx-auto mb-4">
+            <div className="w-16 h-16 rounded-full bg-sky-500/10 flex items-center justify-center mx-auto mb-4">
               <Calendar className="w-8 h-8 text-white" />
             </div>
             <h3 className="text-xl font-semibold mb-2">No Events Yet</h3>
@@ -71,7 +71,7 @@ export default function EventsPage() {
         ) : (
           <div className="grid md:grid-cols-2 gap-6">
             {events.map((event) => (
-              <div key={event.id} className="card p-6 hover:border-white/30 transition-all">
+              <div key={event.id} className="card p-6 hover:border-sky-500/30 transition-all">
                 <div className="flex justify-between items-start mb-4">
                   <div>
                     <h3 className="text-xl font-semibold mb-1">{event.name}</h3>
