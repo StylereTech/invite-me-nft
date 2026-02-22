@@ -32,7 +32,7 @@ export default function CreateEventPage() {
       <div className="max-w-2xl mx-auto">
         <div className="mb-8">
           <h1 className="text-4xl font-bold mb-2">
-            Create Your <span className="gold-text">Event</span>
+            Create Your <span className="accent-text">Event</span>
           </h1>
           <p className="text-gray-400">
             Fill in the details below to create your NFT-powered event invitation
@@ -48,7 +48,7 @@ export default function CreateEventPage() {
               value={formData.name}
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
               placeholder="John's Birthday Party"
-              className="w-full bg-dark-700 border border-gold-500/20 rounded-lg px-4 py-3 focus:border-gold-500 focus:outline-none"
+              className="w-full bg-dark-700 border border-white/20 rounded-lg px-4 py-3 focus:border-white focus:outline-none"
               required
             />
           </div>
@@ -57,14 +57,14 @@ export default function CreateEventPage() {
           <div className="grid md:grid-cols-2 gap-4">
             <div className="card p-6">
               <label className="block text-sm font-medium mb-2 flex items-center gap-2">
-                <Calendar className="w-4 h-4 text-gold-500" />
+                <Calendar className="w-4 h-4 text-white" />
                 Date
               </label>
               <input
                 type="date"
                 value={formData.date}
                 onChange={(e) => setFormData({ ...formData, date: e.target.value })}
-                className="w-full bg-dark-700 border border-gold-500/20 rounded-lg px-4 py-3 focus:border-gold-500 focus:outline-none"
+                className="w-full bg-dark-700 border border-white/20 rounded-lg px-4 py-3 focus:border-white focus:outline-none"
                 required
               />
             </div>
@@ -74,7 +74,7 @@ export default function CreateEventPage() {
                 type="time"
                 value={formData.time}
                 onChange={(e) => setFormData({ ...formData, time: e.target.value })}
-                className="w-full bg-dark-700 border border-gold-500/20 rounded-lg px-4 py-3 focus:border-gold-500 focus:outline-none"
+                className="w-full bg-dark-700 border border-white/20 rounded-lg px-4 py-3 focus:border-white focus:outline-none"
                 required
               />
             </div>
@@ -83,7 +83,7 @@ export default function CreateEventPage() {
           {/* Location */}
           <div className="card p-6">
             <label className="block text-sm font-medium mb-2 flex items-center gap-2">
-              <MapPin className="w-4 h-4 text-gold-500" />
+              <MapPin className="w-4 h-4 text-white" />
               Location
             </label>
             <input
@@ -91,7 +91,7 @@ export default function CreateEventPage() {
               value={formData.location}
               onChange={(e) => setFormData({ ...formData, location: e.target.value })}
               placeholder="123 Main St, New York, NY"
-              className="w-full bg-dark-700 border border-gold-500/20 rounded-lg px-4 py-3 focus:border-gold-500 focus:outline-none"
+              className="w-full bg-dark-700 border border-white/20 rounded-lg px-4 py-3 focus:border-white focus:outline-none"
               required
             />
           </div>
@@ -99,7 +99,7 @@ export default function CreateEventPage() {
           {/* Capacity */}
           <div className="card p-6">
             <label className="block text-sm font-medium mb-2 flex items-center gap-2">
-              <Users className="w-4 h-4 text-gold-500" />
+              <Users className="w-4 h-4 text-white" />
               Guest Capacity
             </label>
             <input
@@ -108,7 +108,7 @@ export default function CreateEventPage() {
               onChange={(e) => setFormData({ ...formData, capacity: parseInt(e.target.value) })}
               min={1}
               max={1000}
-              className="w-full bg-dark-700 border border-gold-500/20 rounded-lg px-4 py-3 focus:border-gold-500 focus:outline-none"
+              className="w-full bg-dark-700 border border-white/20 rounded-lg px-4 py-3 focus:border-white focus:outline-none"
               required
             />
             <p className="text-gray-500 text-sm mt-2">
@@ -119,7 +119,7 @@ export default function CreateEventPage() {
           {/* Artwork */}
           <div className="card p-6">
             <label className="block text-sm font-medium mb-2 flex items-center gap-2">
-              <Image className="w-4 h-4 text-gold-500" />
+              <Image className="w-4 h-4 text-white" />
               Invite Artwork (IPFS URL)
             </label>
             <input
@@ -127,7 +127,7 @@ export default function CreateEventPage() {
               value={formData.artwork}
               onChange={(e) => setFormData({ ...formData, artwork: e.target.value })}
               placeholder="https://ipfs.io/ipfs/..."
-              className="w-full bg-dark-700 border border-gold-500/20 rounded-lg px-4 py-3 focus:border-gold-500 focus:outline-none"
+              className="w-full bg-dark-700 border border-white/20 rounded-lg px-4 py-3 focus:border-white focus:outline-none"
             />
             <p className="text-gray-500 text-sm mt-2">
               Optional: Link to your custom invite artwork on IPFS
@@ -141,7 +141,7 @@ export default function CreateEventPage() {
                 type="checkbox"
                 checked={formData.isPrivate}
                 onChange={(e) => setFormData({ ...formData, isPrivate: e.target.checked })}
-                className="w-5 h-5 rounded border-gold-500/20 bg-dark-700 text-gold-500 focus:ring-gold-500"
+                className="w-5 h-5 rounded border-white/20 bg-dark-700 text-white focus:ring-white"
               />
               <span className="text-sm font-medium">Private Event</span>
             </label>

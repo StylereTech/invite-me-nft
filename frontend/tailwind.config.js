@@ -8,17 +8,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        gold: {
-          50: '#FDF9E7',
-          100: '#FAF0C3',
-          200: '#F5E18A',
-          300: '#F0D051',
-          400: '#EBC418',
-          500: '#C9A84C', // Primary gold
-          600: '#A6853D',
-          700: '#846331',
-          800: '#624226',
-          900: '#3F231B',
+        accent: {
+          50: '#FAFAFA',
+          100: '#F5F5F5',
+          200: '#E5E5E5',
+          300: '#D4D4D4',
+          400: '#A3A3A3',
+          500: '#737373',
+          600: '#525252',
+          700: '#404040',
+          800: '#262626',
+          900: '#171717',
         },
         dark: {
           50: '#F5F5F5',
@@ -40,7 +40,7 @@ module.exports = {
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',
         'slide-up': 'slideUp 0.5s ease-out',
-        'pulse-gold': 'pulseGold 2s infinite',
+        'pulse-accent': 'pulseAccent 2s infinite',
       },
       keyframes: {
         fadeIn: {
@@ -51,9 +51,9 @@ module.exports = {
           '0%': { opacity: '0', transform: 'translateY(20px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
-        pulseGold: {
-          '0%, 100%': { boxShadow: '0 0 0 0 rgba(201, 168, 76, 0.4)' },
-          '50%': { boxShadow: '0 0 0 10px rgba(201, 168, 76, 0)' },
+        pulseAccent: {
+          '0%, 100%': { boxShadow: '0 0 0 0 rgba(255, 255, 255, 0.2)' },
+          '50%': { boxShadow: '0 0 0 10px rgba(255, 255, 255, 0)' },
         },
       },
     },

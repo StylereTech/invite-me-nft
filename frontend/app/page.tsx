@@ -53,7 +53,7 @@ export default function HomePage() {
         {/* Animated background elements */}
         <div className="absolute inset-0 overflow-hidden">
           <motion.div 
-            className="absolute w-96 h-96 rounded-full bg-gold-500/5 blur-3xl"
+            className="absolute w-96 h-96 rounded-full bg-white/5 blur-3xl"
             animate={{ 
               x: [0, 100, 0],
               y: [0, -50, 0],
@@ -62,7 +62,7 @@ export default function HomePage() {
             style={{ top: '10%', left: '10%' }}
           />
           <motion.div 
-            className="absolute w-64 h-64 rounded-full bg-gold-500/3 blur-3xl"
+            className="absolute w-64 h-64 rounded-full bg-white/3 blur-3xl"
             animate={{ 
               x: [0, -80, 0],
               y: [0, 80, 0],
@@ -78,13 +78,13 @@ export default function HomePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <span className="inline-block px-4 py-2 rounded-full bg-gold-500/10 border border-gold-500/20 text-gold-500 text-sm font-medium mb-8">
+            <span className="inline-block px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white text-sm font-medium mb-8">
               🎉 The Future of Event Invitations
             </span>
             
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
               Transform Your{' '}
-              <span className="gold-text">Event Invitations</span>
+              <span className="accent-text">Event Invitations</span>
               {' '}Into Collectibles
             </h1>
             
@@ -122,7 +122,7 @@ export default function HomePage() {
               { value: '$0.001', label: 'Gas Fee' }
             ].map((stat, i) => (
               <div key={i} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold gold-text mb-1">{stat.value}</div>
+                <div className="text-3xl md:text-4xl font-bold accent-text mb-1">{stat.value}</div>
                 <div className="text-gray-500 text-sm">{stat.label}</div>
               </div>
             ))}
@@ -140,7 +140,7 @@ export default function HomePage() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Why Choose <span className="gold-text">Invite Me NFT</span>?
+              Why Choose <span className="accent-text">Invite Me NFT</span>?
             </h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
               Modern event management meets Web3 innovation. Everything you need to create unforgettable events.
@@ -157,8 +157,8 @@ export default function HomePage() {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
               >
-                <div className="w-12 h-12 rounded-lg bg-gold-500/10 flex items-center justify-center mb-4">
-                  <feature.icon className="w-6 h-6 text-gold-500" />
+                <div className="w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center mb-4">
+                  <feature.icon className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
                 <p className="text-gray-400">{feature.description}</p>
@@ -178,7 +178,7 @@ export default function HomePage() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              How It <span className="gold-text">Works</span>
+              How It <span className="accent-text">Works</span>
             </h2>
             <p className="text-gray-400 text-lg">
               Four simple steps to revolutionize your event invitations
@@ -195,7 +195,7 @@ export default function HomePage() {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.15 }}
               >
-                <div className="text-8xl font-bold text-gold-500/10 absolute -top-4 -left-2">
+                <div className="text-8xl font-bold text-white/10 absolute -top-4 -left-2">
                   {step.number}
                 </div>
                 <div className="relative pt-8 pl-4">
@@ -204,7 +204,7 @@ export default function HomePage() {
                 </div>
                 {i < steps.length - 1 && (
                   <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2">
-                    <ArrowRight className="w-8 h-8 text-gold-500/30" />
+                    <ArrowRight className="w-8 h-8 text-white/30" />
                   </div>
                 )}
               </motion.div>
@@ -223,7 +223,7 @@ export default function HomePage() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl font-bold mb-4">
-              Loved by <span className="gold-text">Event Planners</span>
+              Loved by <span className="accent-text">Event Planners</span>
             </h2>
           </motion.div>
 
@@ -250,7 +250,7 @@ export default function HomePage() {
               >
                 <div className="flex gap-1 mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-gold-500 text-gold-500" />
+                    <Star key={i} className="w-5 h-5 fill-white text-white" />
                   ))}
                 </div>
                 <p className="text-gray-300 mb-4">"{testimonial.text}"</p>
@@ -268,13 +268,13 @@ export default function HomePage() {
       <section className="py-24 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
-            className="card p-12 gold-glow"
+            className="card p-12 accent-glow"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Ready to <span className="gold-text">Transform</span> Your Events?
+              Ready to <span className="accent-text">Transform</span> Your Events?
             </h2>
             <p className="text-gray-400 text-lg mb-8 max-w-xl mx-auto">
               Join thousands of event planners who are already using Invite Me NFT 

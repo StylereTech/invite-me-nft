@@ -47,7 +47,7 @@ export default function InvitePage() {
   if (isLoading) {
     return (
       <div className="min-h-screen pt-24 flex items-center justify-center">
-        <Loader2 className="w-8 h-8 text-gold-500 animate-spin" />
+        <Loader2 className="w-8 h-8 text-white animate-spin" />
       </div>
     )
   }
@@ -69,10 +69,10 @@ export default function InvitePage() {
         {/* Event Card */}
         <div className="card overflow-hidden mb-6">
           {/* Artwork Header */}
-          <div className="h-48 bg-gradient-to-br from-gold-500/20 to-gold-600/5 flex items-center justify-center">
+          <div className="h-48 bg-gradient-to-br from-white/20 to-gray-400/5 flex items-center justify-center">
             <div className="text-center">
               <div className="text-5xl mb-2">🎉</div>
-              <div className="text-gold-500 font-semibold">You're Invited!</div>
+              <div className="text-white font-semibold">You're Invited!</div>
             </div>
           </div>
 
@@ -82,15 +82,15 @@ export default function InvitePage() {
             
             <div className="space-y-3 text-gray-300 mb-6">
               <div className="flex items-center gap-3">
-                <Calendar className="w-5 h-5 text-gold-500" />
+                <Calendar className="w-5 h-5 text-white" />
                 <span>{format(invite.event.date, 'EEEE, MMMM d, yyyy')}</span>
               </div>
               <div className="flex items-center gap-3">
-                <Clock className="w-5 h-5 text-gold-500" />
+                <Clock className="w-5 h-5 text-white" />
                 <span>{format(invite.event.date, 'h:mm a')}</span>
               </div>
               <div className="flex items-center gap-3">
-                <MapPin className="w-5 h-5 text-gold-500" />
+                <MapPin className="w-5 h-5 text-white" />
                 <span>{invite.event.location}</span>
               </div>
             </div>

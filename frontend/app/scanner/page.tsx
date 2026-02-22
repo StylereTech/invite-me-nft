@@ -75,7 +75,7 @@ export default function ScannerPage() {
       <div className="max-w-md mx-auto">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold mb-2">
-            Check-In <span className="gold-text">Scanner</span>
+            Check-In <span className="accent-text">Scanner</span>
           </h1>
           <p className="text-gray-400">
             Scan guest QR codes to verify attendance
@@ -107,11 +107,11 @@ export default function ScannerPage() {
             {/* Scanning overlay */}
             <div className="absolute inset-0 pointer-events-none">
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-64 h-64 border-2 border-gold-500/50 rounded-lg relative">
-                  <div className="absolute top-0 left-0 w-8 h-8 border-t-4 border-l-4 border-gold-500 rounded-tl-lg" />
-                  <div className="absolute top-0 right-0 w-8 h-8 border-t-4 border-r-4 border-gold-500 rounded-tr-lg" />
-                  <div className="absolute bottom-0 left-0 w-8 h-8 border-b-4 border-l-4 border-gold-500 rounded-bl-lg" />
-                  <div className="absolute bottom-0 right-0 w-8 h-8 border-b-4 border-r-4 border-gold-500 rounded-br-lg" />
+                <div className="w-64 h-64 border-2 border-white/50 rounded-lg relative">
+                  <div className="absolute top-0 left-0 w-8 h-8 border-t-4 border-l-4 border-white rounded-tl-lg" />
+                  <div className="absolute top-0 right-0 w-8 h-8 border-t-4 border-r-4 border-white rounded-tr-lg" />
+                  <div className="absolute bottom-0 left-0 w-8 h-8 border-b-4 border-l-4 border-white rounded-bl-lg" />
+                  <div className="absolute bottom-0 right-0 w-8 h-8 border-b-4 border-r-4 border-white rounded-br-lg" />
                 </div>
               </div>
             </div>
@@ -121,7 +121,7 @@ export default function ScannerPage() {
         {/* Manual Entry */}
         <div className="card p-6 mb-6">
           <h3 className="font-semibold mb-4 flex items-center gap-2">
-            <QrCode className="w-5 h-5 text-gold-500" />
+            <QrCode className="w-5 h-5 text-white" />
             Manual Entry
           </h3>
           <input
@@ -129,7 +129,7 @@ export default function ScannerPage() {
             placeholder="Enter invite token ID"
             value={scannedCode || ''}
             onChange={(e) => setScannedCode(e.target.value)}
-            className="w-full bg-dark-700 border border-gold-500/20 rounded-lg px-4 py-3 mb-4 focus:border-gold-500 focus:outline-none"
+            className="w-full bg-dark-700 border border-white/20 rounded-lg px-4 py-3 mb-4 focus:border-white focus:outline-none"
           />
           <button
             onClick={simulateScan}
@@ -182,15 +182,15 @@ export default function ScannerPage() {
         {/* Stats */}
         <div className="grid grid-cols-3 gap-4 mt-8">
           <div className="card p-4 text-center">
-            <div className="text-2xl font-bold text-gold-500">24</div>
+            <div className="text-2xl font-bold text-white">24</div>
             <div className="text-gray-500 text-sm">Checked In</div>
           </div>
           <div className="card p-4 text-center">
-            <div className="text-2xl font-bold text-gold-500">35</div>
+            <div className="text-2xl font-bold text-white">35</div>
             <div className="text-gray-500 text-sm">Expected</div>
           </div>
           <div className="card p-4 text-center">
-            <div className="text-2xl font-bold text-gold-500">68%</div>
+            <div className="text-2xl font-bold text-white">68%</div>
             <div className="text-gray-500 text-sm">Arrival Rate</div>
           </div>
         </div>
