@@ -23,6 +23,9 @@ export function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
+            <Link href="/dashboard" className="text-sky-300 hover:text-white transition-colors">
+              Dashboard
+            </Link>
             <Link href="/events" className="text-sky-300 hover:text-white transition-colors">
               My Events
             </Link>
@@ -56,6 +59,13 @@ export function Navbar() {
       {isOpen && (
         <div className="md:hidden bg-dark-800 border-t border-white/10">
           <div className="px-6 py-4 space-y-4">
+            <Link 
+              href="/dashboard" 
+              className="block text-sky-300 hover:text-white transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              Dashboard
+            </Link>
             <Link 
               href="/events" 
               className="block text-sky-300 hover:text-white transition-colors"

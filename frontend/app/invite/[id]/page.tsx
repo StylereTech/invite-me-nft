@@ -15,8 +15,8 @@ const mockInvite = {
     location: '123 Main St, New York, NY'
   },
   status: 'pending',
-  rsvpDate: null,
-  checkInDate: null
+  rsvpDate: null as Date | null,
+  checkInDate: null as Date | null
 }
 
 export default function InvitePage() {

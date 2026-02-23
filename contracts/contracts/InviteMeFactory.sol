@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.19;
+pragma solidity ^0.8.20;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "./InviteMeNFT.sol";
@@ -39,7 +39,7 @@ contract InviteMeFactory is Ownable {
     event SingleContractModeEnabled(address indexed contractAddress);
 
     constructor() Ownable(msg.sender) {
-        useSingleContract = true;
+        useSingleContract = false;
     }
 
     /**
